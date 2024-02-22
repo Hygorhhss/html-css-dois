@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-level e Box-inline</title>
+    <style>
+        h1 {
+            background-color: lightgreen;
+            border: 10px solid darkgray;
+            height: 300px;
+            width: 300px;
+            padding: 10px 10px 10px 10px;
+        }
+
+        a {
+            border: 10px solid red;
+            padding: 10px 10px 10px 10px;
+        }
+
+        /*<h1> box level e a<> inline level*/
+    </style>
+</head>
+<body>
+    <!--Sempre que usamos o Devtols podemos ver as configurações 
+    User agent é o nosso navegador e ele já tem as configurações pré definidas-->
+    <!--h1 = display:block (box-level), podemos mudar para display:flex-->
+    <!--Os tracinho (-) no Devtols informa que não tem configuração, o navegador já coloca
+    margin 21:4 por padrão-->
+    <!--Body não é o corpo inteiro, é um box que está contendo o paragrafo e o h1 apenas -->
+
+
+    <h1>Exemplo de box-level</h1>
+    <p>também são exemplos de box-level, mas os <a href="#"> links são exemplos de inline-level</a>. Vamos
+    ver como funciona</p>
+</body>
+</html>

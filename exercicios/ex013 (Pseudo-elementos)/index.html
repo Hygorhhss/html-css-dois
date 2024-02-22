@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red;
+            font-style: bold;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: rgb(202, 32, 179)
+        }
+
+        a:hover {
+            color: rgb(49, 80, 184);
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: rgb(214, 26, 26);
+        }
+
+        <!--Abaixo que vai ter o especial ::-->
+
+        .especial::before {
+            content: '[✓]';
+
+        }
+
+        a::after { 
+            content: '[link]';
+            text-decoration: none;
+            font-weight:normal;
+            color: rgb(155, 24, 24);
+        }
+
+        .especial {
+            background-color: rgb(218, 193, 193);
+        }
+    </style>
+
+</head>
+<body>
+
+    <!--Tirar o sublinhado do link (text-decoration: none)
+        Colocar a linha quando estiver no a:active, é só reproduzir 
+        text-decoration: underline, etc
+    -->
+
+    <!--Posso colocar uma class em um link ou outro elemento e utilizar o after ou before para linkar alteração-->
+
+
+    <ul>
+        <li><a href="https://github.com/gustavoguanabara/html-css/blob/master/aulas-pdf/15%20-Seletores%20personalizados.pdf" target="_blank">Github</a></li>
+        <li><a href="https://github.com/gustavoguanabara/html-css/blob/master/aulas-pdf/15%20-Seletores%20personalizados.pdf" class="especial">Canal do youtube</a></li>
+        <li><a href="https://github.com/gustavoguanabara/html-css/blob/master/aulas-pdf/15%20-Seletores%20personalizados.pdf">Site do Cursoemvideo</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borda personalizada</title>
+    <style>
+        h1 {
+            align-items: center;
+        }
+
+        h1 {
+            border: 5px solid black;
+            padding: 10px;
+            border-image-source: url('borda.png');
+            border-image-slice: 27;
+            border-image-repeat: repeat;
+            width: 200px;
+
+            border-image: url('borda.png') 27 repeat;
+        }
+    </style>
+    <!--Verificamos após a configuração do image-source, image-repeat, image:slice o DevTols (verificamos o image-slice) aumentamos o diminuimos para ficar certo o tamanho-->
+    <!--Em image-repeat também temos o stretch para esticar-->
+</head>
+<body>
+    <h1 class="centralizar">texte de borda</h1>
+</body>
+</html>

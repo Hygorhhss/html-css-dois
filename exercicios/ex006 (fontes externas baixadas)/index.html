@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonte externa baixada</title>
+    <style>
+        @font-face {
+            font-family: "Guardians";
+            src: url('guardians/Guardians.ttf') format(opentype), url(guardians2) format(truetype); 
+        }
+        body {
+            font-family: "Guardians", 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+            font-size: 2em;
+        }
+    </style>
+
+        <!--inserir o @font-face, na URL colocar o nome do arquivo, a frente da URL inserir o format (formato do otf ou ttf), depois colocar no body, h1 ou p no font-family o nome da fonte referente a @font-face-->
+        
+        <!--tipos de format:
+        opentype (otf)
+        truetype (ttf)
+        embedded-opentype
+        truetype-aat (apple advanced typography)-->
+
+        <!--Caso use mais de uma fonte, é so colocar mais uma URL a frente do format e começar o mesmo processo para inserir-->
+
+        <!--A frente do format possivel colocar outras condições para a fonte como = font-weight: normal; font-size: ; font-style: normal; (no caso acima não é possivel pois a fonte já está pré-definida)-->
+
+        <!--Caso necessário colocar todas as configurações da fonte no @font-face e depois no seletor/tag que vai ser implementado.-->
+
+</head>
+<body>
+    <h1>Fonte externa</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit harum voluptate possimus corrupti quos similique, incidunt, sapiente ipsa blanditiis quisquam quas commodi modi eius facilis facere rem assumenda! Iste, tempore?</p>
+</body>
+</html>

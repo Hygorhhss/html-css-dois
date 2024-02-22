@@ -1,0 +1,127 @@
+
+*{
+    margin:0;
+    padding:0;
+    border:0;
+}
+
+@font-face {
+    font-family: "idroid.otf";
+    src: url('fontes/idroid.otf') format(opentype), url(idroid.otf) 
+format(truetype);
+}
+
+h1#principal {
+    text-align: center;
+    font-family: ;
+    font-size: 2.5em;
+    padding: 30px;
+}
+
+p {
+    text-align: center;
+
+}
+
+nav, ul, li, a {
+    display: flex;
+    text-decoration: none;
+    padding: 0px 5px;
+    padding-bottom: 2px;
+}
+
+
+h1#principal {
+    color: white;
+}
+
+p#segundo {
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+a {
+    color: white;
+}
+
+header {
+    background-image: linear-gradient(to bottom,#3ad07e, #1a5c38);
+    margin-top: 0;
+}
+
+main, section {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+    padding: 15px 3px;
+    text-indent: 2em;
+}
+
+
+h1 {
+    text-align: left;
+    padding-left: 2em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 2em;
+    color: #1a5c38;
+}
+
+h2, h3 {
+    text-align: left;
+    padding-left: 2em;
+    color: #1a5c38
+}
+
+
+h1, h2 {
+    font-family: "idroid.otf";
+}
+
+h2 {
+    background-image: linear-gradient(to right, #bcc5c0, #adf1cc);
+
+}
+
+h3 {
+    background-color: rgb(84, 145, 84);
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+section#aprender {
+    background-color: rgb(161, 209, 161);
+}
+
+audio {
+    background-color: green;
+    text-align: center;
+
+}
+
+footer {
+    background-color: green;
+}
+
+footer, p {
+    text-align: center;
+}
+
+body {
+    margin: 0% 20%;
+    background-color: #1a5c38;
+}
+
+header, section, article {
+    background-color: white;
+}
+
+ul,li {
+    display: flexbox;
+}
